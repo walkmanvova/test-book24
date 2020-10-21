@@ -1,0 +1,29 @@
+.breadcrumbs {
+    &__list {
+        padding: 8px 16px;
+    }
+    &__item {
+        display: inline;
+        word-break: break-all;
+        font-size: 12px;
+        line-height: 20px;
+        color: #8B95A5;
+        margin-left: 17px;
+        position: relative;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            width: 10px;
+            height: 2px;
+            background-color: #7D8290;
+        }
+        &:before {
+            transform: rotate(-45deg) translate(4px, 0);
+        }
+        &:after {
+            transform: rotate(45deg) translate(4px, 0);
+        }
+    }
+}

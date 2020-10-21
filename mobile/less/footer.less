@@ -1,0 +1,36 @@
+.footer {
+    background-color: #f0f2f7;
+    padding-top: 8px;
+    font-size: 14px;
+    &__container {
+        padding-left: 16px;
+        padding-right: 16px;
+        min-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 960px;
+        padding-bottom: 70px;
+    }
+    &__item {
+        border-bottom: 1px solid #e6e9ed;
+        padding: 16px 0;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    &__list-item {
+        list-style-type: none;
+        margin-bottom: 16px;
+    }
+    &__link {
+        color: #242424;
+        text-decoration: none;
+        line-height: 20px;
+    }
+}
