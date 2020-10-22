@@ -1,0 +1,47 @@
+.b24-input-control {
+    box-sizing: border-box;
+    font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    &__body {
+        transition: padding .4s cubic-bezier(.23,1,.32,1);
+        position: relative;
+    }
+    &__container {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #c7ccd7;
+        border-radius: 4px;
+        padding: 0;
+        height: 44px;
+        transition: background .4s cubic-bezier(.23,1,.32,1),border-color .4s cubic-bezier(.23,1,.32,1);
+        margin-top: 2px;
+    }
+    &._search-d &__container {
+        border-width: 2px;
+        padding-right: 100px;
+    }
+    &__control, &__controls-list {
+        display: flex;
+        align-items: center;
+    }
+    &__controls-list {
+        margin-left: 8px;
+    }
+    &__control-icon {
+        fill: #aeb4c2;
+        transition: fill .4s cubic-bezier(.23,1,.32,1);
+    }
+    &__input {
+        border: 0;
+        font-family: Open Sans,system-ui,Arial,sans-serif;
+        outline: 0;
+        background-color: transparent;
+        flex: auto;
+        width: 100%;
+        font-size: 16px;
+        color: #242424;
+        padding: 0 8px;
+    }
+}

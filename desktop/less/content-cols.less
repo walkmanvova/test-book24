@@ -1,0 +1,15 @@
+.content-cols {
+    display: flex;
+    justify-content: space-between;
+    &__col {
+        width: 100%;
+        max-width: 600px;
+        & + & {
+            padding-left: 16px;
+        }
+    }
+    &__image {
+        width: auto;
+        max-width: 100%;
+    }
+}

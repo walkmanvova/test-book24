@@ -1,0 +1,41 @@
+.main-menu-d {
+    display: flex;
+    position: relative;
+    &__item {
+        position: relative;
+    }
+    &__item._new {
+        border-right: 1px solid #e6e9ed;
+    }
+    &__link {
+        text-decoration: none;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #363636;
+        display: flex;
+        white-space: nowrap;
+        transition: background-color .3s;
+    }
+    &__item._back-to-school &__link {
+        padding-left: 50px;
+        color: #5a9c51;
+    }
+    &__icon {
+        fill: #aeb4c2;
+    }
+    &__item._new &__icon {
+        margin-left: 12px;
+        margin-top: -2px;
+    }
+    &__icons {
+        margin-left: 12px;
+        transition: transform .3s;
+    }
+    &__item._back-to-school &__icons {
+        position: absolute;
+        margin: 0;
+        top: 4px;
+        left: 8px;
+    }
+}

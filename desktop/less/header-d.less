@@ -1,0 +1,99 @@
+.header-d {
+    &__container {
+        max-width: 1600px;
+        min-width: 1024px;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &__middle-content, &__top-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__slogan {
+        font-size: 13px;
+        line-height: 20px;
+        color: #242424;
+        flex-shrink: 0;
+    }
+    &__second-menu {
+        flex-grow: 1;
+        display: grid;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    &__additional-menu-wrap {
+        z-index: 10;
+        background: #fff;
+        display: flex;
+    }
+    &__additional-menu {
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #e6e9ed;
+        flex-shrink: 0;
+    }
+    &__delivery-link {
+        text-decoration: none;
+        cursor: pointer;
+        color: #3d70b2;
+        font-size: 13px;
+        line-height: normal;
+        letter-spacing: normal;
+        display: flex;
+        align-items: center;
+        transition: color .3s;
+        white-space: nowrap;
+        margin-right: 24px;
+    }
+    &__delivery-link-icon {
+        margin-right: 8px;
+        fill: #aeb4c2;
+    }
+    &__fast-contacts {
+        margin: 0;
+    }
+    &__middle {
+        border-top: 1px solid #e6e7eb;
+        padding: 18px 0 11px;
+    }
+    &__logo {
+        margin-right: 24px;
+        display: flex;
+        align-items: center;
+    }
+    &__search {
+        margin: 0 auto;
+        max-width: none;
+        width: auto;
+        flex: 1 1 320px;
+    }
+    &__personal {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+    }
+    &__cart {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    &__bottom {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 11px;
+            opacity: .06;
+            background-image: linear-gradient(-180deg,#000,hsla(0,0%,100%,0) 62%);
+        }
+    }
+    &__main-menu {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}

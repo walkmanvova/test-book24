@@ -1,0 +1,19 @@
+.text {
+    font-size: 16px;
+    line-height: 28px;
+    color: #242424;
+    margin: 16px 0;
+    &_title {font-weight: bold; margin: 24px 0 8px; line-height: 24px;}
+    &_not-offset-top {margin-top: 0;}
+    &_not-offset-bottom {margin-bottom: 0;}
+    ul& {
+        margin-top: 8px;
+    }
+    & li:before {
+        content: '-';
+        margin-right: 5px;
+    }
+    & li + li {
+        margin-top: 8px;
+    }
+}

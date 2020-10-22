@@ -1,0 +1,29 @@
+.location-d {
+    position: relative;
+    &__link {
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        text-decoration: none;
+        color: inherit;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        max-width: 160px;
+        overflow: hidden;
+    }
+    &__link-icon {
+        margin-right: 8px;
+        fill: #aeb4c2;
+        flex-shrink: 0;
+    }
+    &__link-text {
+        font-size: 13px;
+        font-weight: 700;
+        color: #3d70b2;
+        border-bottom: 0;
+        white-space: nowrap;
+        transition: color .3s,border-bottom-color .3s;
+    }
+}
